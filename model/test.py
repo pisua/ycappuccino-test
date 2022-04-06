@@ -16,7 +16,7 @@ class Test(Model):
 @Item(collection="tests",name="test2",plural="tests2")
 class TestExtend(Test):
     def __init__(self, a_dict):
-        super().__init__(a_dict)
+        super(TestExtend).__init__(a_dict)
         self._name = None
 
     @Property(name="name2")
